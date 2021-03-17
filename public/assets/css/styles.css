@@ -1,0 +1,118 @@
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    background: lightskyblue;
+    position: fixed;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin: 0 auto;
+    min-width: 1200px;
+    max-width: 900px;
+}
+
+.header__item {
+    min-width: 190px;
+}
+
+.header__left {
+    position: relative;
+    padding: 8px 0;
+}
+
+.header__left a {
+    font: normal italic 30px/40px fantasy;
+}
+
+.header__right {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+}
+
+.header__right a{
+    margin: 0 4px;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    padding-top: 70px;
+}
+
+.alert-error {
+    color: red;
+}
+
+.car-item {
+    margin: 12px 0;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+input.btn-save {
+    display: inline-block;
+    float: right;
+    margin-right: 8px;
+}
+
+.icon {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    float:left;
+    text-align:center;
+}
+
+.table_item_button {
+    margin: 0 10px;
+    display:inline-block;
+    padding: 0;
+    border-width: 0;
+    width:30px;
+    height:30px;
+    float:left;
+    text-align:center;
+    background: transparent;
+}
+
+.table_item_button img{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    float:left;
+    text-align:center;
+}
+
+.gender-dropdown-item {
+    border-radius: .25rem;
+    color: #212529;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+}
+
+.gender-dropdown__wrapper {
+    border: 1px solid #ced4da;
+}
+
+.card tr {
+    line-height: 38px;
+}
+
+.main_page {
+    text-align:center;
+}

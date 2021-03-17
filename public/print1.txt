@@ -1,0 +1,25 @@
+POST /clients HTTP/1.0
+Accept:                    text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding:           gzip, deflate, br
+Accept-Language:           ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control:             max-age=0
+Connection:                close
+Content-Length:            323
+Content-Type:              application/x-www-form-urlencoded
+Cookie:                    Phpstorm-bf02943d=929ceb34-9e94-4b6f-aee3-6ae847f038e4; XSRF-TOKEN=eyJpdiI6ImFEc2t4VnozdzdHY3JnV055cHpXSmc9PSIsInZhbHVlIjoiV29OWlB5TVdNNlhHN2c0TlQ5Q2swRi9zbU5PTUhvRDYzNnRDK1U2U1ZncUJVazdNRExseWZFVTE3YmpnRXpVYWF1S2l2cTF3T2l4Nk00NEZTWlFMMXRoTDdlOEVZbXpmaFV4b2ZYaEY5b0JXYVRkckVqa29OVlFTVVlXMkMyRXciLCJtYWMiOiJiZjg1OTY1ODdlYzMwZThhODg1ZmRlMzYxNDgxODMyYzkyNDFmZTY4YmYxZGM3ZGE3OTVkODlhNGQzZjI3Y2Y5In0%3D; laravel_session=eyJpdiI6IjlrQ21kUlhPUDlMTnhsbzJia3duN1E9PSIsInZhbHVlIjoibjRNSmQycnVYL0lTbmlEMUVpKzFnczk4M0Z2V1pPeVpvRlFUdFNKUmVoMkxxYjFUaUIxVlkxVkZNclJGVFNlL3BBSDZpbDhOUW1tMGdSU2paUzNhK205OXhkb2F2cHkwTG5RbG9Sc2RSRi9EODRlY3c2NENFVVhtQmRYWWo4UG4iLCJtYWMiOiI3NmJlNTNiNGMzZWI1YzgzNDkwMTBlN2FkNDUxNDNiNWQzNWRkYTI0MmIwNzc0ZDQwOWNiZTBhZmY0YzhhMDU2In0%3D
+Host:                      localhost
+Origin:                    http://localhost
+Referer:                   http://localhost/clients/create
+Sec-Ch-Ua:                 "Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"
+Sec-Ch-Ua-Mobile:          ?0
+Sec-Fetch-Dest:            document
+Sec-Fetch-Mode:            navigate
+Sec-Fetch-Site:            same-origin
+Sec-Fetch-User:            ?1
+Upgrade-Insecure-Requests: 1
+User-Agent:                Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36
+X-Forwarded-Proto:         http
+X-Real-Ip:                 127.0.0.1
+Cookie: Phpstorm-bf02943d=; XSRF-TOKEN=QmGcW7ZBWmEaesE8CnySA3nUgVf3y7QxpBvsIyR6; laravel_session=uW4lgIfHR4uGwWe8qjivPEGg7aPvZrVohblxHuJd
+
+_token=QmGcW7ZBWmEaesE8CnySA3nUgVf3y7QxpBvsIyR6&lastname=%D0%98%D1%88%D0%B5%D0%BA%D0%B5%D0%BD%D0%BE%D0%B2&firstname=%D0%92%D1%8F%D1%87%D0%B5%D1%81%D0%BB%D0%B0%D0%B2&middlename=%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B5%D0%B2%D0%B8%D1%87&is_male=1&phone=123123&address=%D0%B3.%D0%92%D0%BE%D0%BB%D0%B3%D0%BE%D0%B3%D1%80%D0%B0%D0%B4

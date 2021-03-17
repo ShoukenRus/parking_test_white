@@ -23,11 +23,13 @@
                     <td>{{ $item->license_plate }}</td>
                     <td>
                         <a class="table_item_button" href="{{ route('client.edit', $item->client_id) }}"><img src="{{ asset('assets/images/pencil.svg') }}"></a>
-                        <form action="{{ route('car.destroy', $item->car_id) }}" method="post">
-                            @method('DELETE')
-                            @csrf
-                            <button type="submit" class="table_item_button"><img  src="{{ asset('assets/images/delete.svg') }}"></button>
-                        </form>
+                        @if($item->car_id != Null)
+                            <form action="{{ route('car.destroy', $item->car_id) }}" method="post">
+                                @method('DELETE')
+                                @csrf
+                                <button type="submit" class="table_item_button"><img  src="{{ asset('assets/images/delete.svg') }}"></button>
+                            </form>
+                        @endif
                     </td>
                 </tr>
             @endforeach

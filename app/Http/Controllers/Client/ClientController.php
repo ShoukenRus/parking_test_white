@@ -16,19 +16,14 @@ class ClientController extends Controller
      * @return mixed
      */
     private function validateDataClient($request){
-
-        if ($request->is_male == '1'){
-            $request->is_male = true;
-        } else {
-            $request->is_male = false;
-        }
-
+        $rule_phone = $request->_method == 'PATCH' ? 'required' : 'required|unique:clients';
+        $request->is_male = $request->is_male == '1' ? true : false;
         return $request->validate([
             'firstname'  => 'required|min:3',
             'lastname'   => 'required|min:3',
             'middlename' => 'required|min:3',
             'is_male'    => 'required|string',
-            'phone'      => 'required|unique:clients',
+            'phone'      => $rule_phone,
             'address'    => 'required|string'
         ]);
     }
@@ -40,7 +35,8 @@ class ClientController extends Controller
      */
     public function index()
     {
-        $data = Car::list();
+        $data = Client::list();
+//        dd($data);
         return view('client_list', compact('data'));
     }
 

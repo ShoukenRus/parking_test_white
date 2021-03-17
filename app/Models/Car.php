@@ -10,27 +10,13 @@ class Car extends Model
 {
     use HasFactory;
 
-    static public function list() {
-        return DB::table('cars')
-            ->leftJoin('clients', 'cars.holder_id', '=', 'clients.id')
-            ->select('cars.id as car_id',
-                'cars.brand',
-                'cars.model',
-                'cars.license_plate',
-                'clients.lastname',
-                'clients.firstname',
-                'clients.middlename',
-                'clients.id as client_id')
-            ->paginate(7);
-    }
-
     static public function getCarsByClient($id) {
         return DB::table('cars')->where('holder_id', '=', $id)->get()->toArray();
     }
 
-    static public function createCar($data) {
+    static public function createCar($data, $holder_id) {
         return DB::table('cars')->insert([
-            'holder_id'=>$data['holder_id'],
+            'holder_id'=>$holder_id,
             'brand'=>$data['brand'],
             'model'=>$data['model'],
             'color'=>$data['color'],

@@ -24,7 +24,8 @@
                             <table class="table table-borderless">
                                 <tr>
                                     <td>Фамилия</td>
-                                    <td><input class="form-control" name="lastname" type="text" value="{{ $client->lastname }}">
+                                    <td>
+                                        <input class="form-control" name="lastname" type="text" value="{{ $client->lastname }}">
                                         <div class="form-text">
                                             @error('lastname')
                                             <span class="text-danger">{{ $message }}</span>
@@ -34,7 +35,8 @@
                                 </tr>
                                 <tr>
                                     <td>Имя</td>
-                                    <td><input class="form-control" name="firstname" type="text" value="{{ $client->firstname }}">
+                                    <td>
+                                        <input class="form-control" name="firstname" type="text" value="{{ $client->firstname }}">
                                         <div class="form-text">
                                             @error('firstname')
                                             <span class="text-danger">{{ $message }}</span>
@@ -44,7 +46,8 @@
                                 </tr>
                                 <tr>
                                     <td>Отчество</td>
-                                    <td><input class="form-control" name="middlename" type="text" value="{{ $client->middlename }}">
+                                    <td>
+                                        <input class="form-control" name="middlename" type="text" value="{{ $client->middlename }}">
                                         <div class="form-text">
                                             @error('middlename')
                                             <span class="text-danger">{{ $message }}</span>
@@ -54,7 +57,8 @@
                                 </tr>
                                 <tr>
                                     <td>Телефон</td>
-                                    <td><input class="form-control" name="phone" type="text" value="{{ $client->phone }}">
+                                    <td>
+                                        <input class="form-control" name="phone" type="text" value="{{ $client->phone }}">
                                         <div class="form-text">
                                             @error('phone')
                                             <span class="text-danger">{{ $message }}</span>
@@ -64,7 +68,8 @@
                                 </tr>
                                 <tr>
                                     <td>Адрес</td>
-                                    <td><input class="form-control" name="address" type="text" value="{{ $client->address }}">
+                                    <td>
+                                        <input class="form-control" name="address" type="text" value="{{ $client->address }}">
                                         <div class="form-text">
                                             @error('address')
                                             <span class="text-danger">{{ $message }}</span>
@@ -120,10 +125,6 @@
                                     </tr>
                                     <tr>
                                         <td>Цвет</td>
-                                        <td>{{ $car->color }}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Цвет кузова</td>
                                         <td>{{ $car->color }}</td>
                                     </tr>
                                     <tr>
@@ -201,7 +202,7 @@
                                 <tr>
                                     <td>Номер</td>
                                     <td>
-                                        <input class="form-control input_field" name="license_plate" type="text">
+                                        <input class="form-control input_field" name="license_plate" type="number">
                                         <div class="form-text">
                                             @error('license_plate')
                                             <span class="text-danger">{{ $message }}</span>
@@ -212,7 +213,7 @@
                                 <tr>
                                     <td>Код региона</td>
                                     <td>
-                                        <input class="form-control input_field" name="code_region" type="text">
+                                        <input class="form-control input_field" name="code_region" type="number">
                                         <div class="form-text">
                                             @error('code_region')
                                             <span class="text-danger">{{ $message }}</span>

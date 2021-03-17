@@ -16,5 +16,5 @@ use App\Http\Controllers\Client\ClientController,
 |
 */
 Route::get('/', [MainController::class, 'index'])->name('main');
-Route::resource('clients', ClientController::class)->names('client')->except('show');
+Route::resource('clients', ClientController::class)->names('client')->except('show', 'destroy');
 Route::resource('car', CarController::class)->names('car')->except('index', 'create', 'show', 'edit');

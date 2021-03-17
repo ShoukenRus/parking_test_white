@@ -10,6 +10,23 @@ class Client extends Model
 {
     use HasFactory;
 
+    static public function list() {
+        return DB::table('clients')
+            ->leftJoin('cars', 'clients.id', '=', 'cars.holder_id')
+            ->orderBy('lastname', 'asc')
+            ->orderBy('firstname', 'asc')
+            ->orderBy('middlename', 'asc')
+            ->select('cars.id as car_id',
+                'cars.brand',
+                'cars.model',
+                'cars.license_plate',
+                'clients.lastname',
+                'clients.firstname',
+                'clients.middlename',
+                'clients.id as client_id')
+            ->paginate(7);
+    }
+
     static public function store($data) {
 
         return DB::table('clients')->insertGetId([

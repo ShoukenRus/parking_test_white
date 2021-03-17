@@ -16,7 +16,6 @@ class CarController extends Controller
             'color'           => 'required|min:3',
             'license_plate'   => 'required|string|unique:cars',
             'code_region'     => 'required|numeric',
-            'address'         => 'required|string',
             'is_parked'       => 'boolean'
         ]);
     }
@@ -50,7 +49,7 @@ class CarController extends Controller
     public function store(Request $request)
     {
         $client_id = $request->holder_id;
-        Car::createCar($this->validateDataCar($request));
+        Car::createCar($this->validateDataCar($request), $client_id);
         return redirect(route('client.edit', $client_id));
     }
 
@@ -85,11 +84,6 @@ class CarController extends Controller
      */
     public function update(Request $request, int $id)
     {
-//        if ($request->is_parked == 'on'){
-//            $request->is_parked = true;
-//        } else {
-//            $request->is_parked = false;
-//        }
         $is_parked = $request->is_parked == 'on' ? true : false;
         Car::updateCar($is_parked, $id);
         return redirect(route('client.edit', $request->holder_id));
